@@ -62,18 +62,16 @@ a:link { text-decoration: none; }
 
 
 #navbar-main-logo {
-  /* max-width: 18%; */
-  width:75px;
-  height:75px;
+  max-width: 18%;
   margin-top: 1%;
   margin-bottom: 1%;
-  margin-left: 50%;
+  margin-left: 5%;
 }
 
 .navbar {
   display: inline-block;
   position: absolute;
-  /* overflow: hidden; */
+  overflow: hidden;
   background-color: #333;
   width: 100%;
   border-bottom-left-radius: 50vw;
@@ -81,20 +79,34 @@ a:link { text-decoration: none; }
   box-shadow: 0 4px 2px -2px greenyellow;
 }
 
-.navbar-collapse{
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  left:50%;
+.top-navbar-left{
+  float: none;
 }
 
-#mynavbar{
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  left:50%;
+
+.top-navbar-middle {
+  float: none;
+  position: absolute;
+  width: 60%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: Bell;
 }
 
+.top-navbar-middle a{
+  margin-right: 1%;
+  margin-left: 1%;
+  font-size: 24px;
+  font-style: italic;
+  color: blanchedalmond;
+}
+
+.top-navbar-right{
+  float: right;
+  position: absolute;
+
+}
 
 .border-gradient {
   border: 10px solid;
@@ -109,21 +121,6 @@ a:link { text-decoration: none; }
   background-origin: border-box;
   background-clip: padding-box, border-box;
   /* border-image-source: linear-gradient(to left, #743ad5, #d53a9d); */
-}
-
-/* .form-control{
-  right:10%;
-  box-sizing: content-box;
-} */
-
-.navbar input[type=text] {
-  float: right;
-  padding: 6px;
-  border: none;
-  margin-top: 8px;
-  margin-right: 5vw;
-  font-size: 17px;
-
 }
 
 /* ----------------------------------------For mobile---------------------------------------- */
