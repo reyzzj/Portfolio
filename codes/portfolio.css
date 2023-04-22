@@ -72,7 +72,7 @@ a:link { text-decoration: none; }
 
 .navbar {
   display: inline-block;
-  position: absolute;
+  position: relative;
   /* overflow: hidden; */
   background-color: #333;
   width: 100%;
@@ -81,19 +81,6 @@ a:link { text-decoration: none; }
   box-shadow: 0 4px 2px -2px greenyellow;
 }
 
-.navbar-collapse{
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  left:50%;
-}
-
-#mynavbar{
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  left:50%;
-}
 
 
 .border-gradient {
@@ -124,6 +111,12 @@ a:link { text-decoration: none; }
   margin-right: 5vw;
   font-size: 17px;
 
+}
+
+#Layer_1{
+  margin-top: 10vw;
+  max-width: 40%;
+  margin-left: 5%;
 }
 
 /* ----------------------------------------For mobile---------------------------------------- */
