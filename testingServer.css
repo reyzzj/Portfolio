@@ -1,35 +1,185 @@
 /* ---------------------------------------------------------------------TESTING CODE HERE--------------------------------------------------------------------- */
 
-.search {
-  /* Roundness */
-  border: 1px solid #BABABA;
-  border-radius: 20px;
-  height: 35px;
+@import url(https://fonts.googleapis.com/css?family=Raleway);
+.categories,
+li {
+  font-family: Raleway, sans-serif;
+  background-color: #282155;
+  border-radius: 300px;
+}
+.in,
+.out,
+li.graph-bg {
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+}
+
+.thewholething {
+  width: 550px;
+  height: 100%;
+  margin: 0 auto;
+}
+.categories {
+  font-size: 22pt;
+  color: #8d8ad9;
+  padding: 5px 10px;
+}
+.labelcontainer {
+  margin-top: 30px;
+  left: 30%;
+  width: 200px;
+  float: left;
+}
+li {
+  font-size: 18pt;
+  padding: 2px 10px 5px;
+  margin: 3px;
+}
+.label1 {
+  color: red;
+}
+.label2 {
+  color: #0ff;
+}
+.label3 {
+  color: #ff0;
+}
+.label4 {
+  color: #c9c;
+}
+
+.graph-bg {
   width: 300px;
-  padding: 8px;
-
-  background: white;
-
-  /* Fonts and text */
-  font-family: "Helvetica Neue", sans-serif;
-  font-weight: 500;
-  font-size: 20px;
-  color: #7A7A7A;
-
-  box-shadow: 1px 5px 2px #EDEDED;
+  height: 300px;
+  float: right;
+  background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/522641/jnehXBI.png);
+}
+.graph_background {
+  width: 300px;
+  height: 300px;
+  float: right;
 }
 
-.search:hover {
-  background: #FCFCFC;
+.graphcontainer {
+  top: 16.5%;
+  left: 2.5%;
+  margin: auto;
+  position: relative;
+  width: 200px;
+  height: 200px;
 }
-
-.search:focus {
-  outline: none;
-  background: #FFFFFF;
-  border-color: #7AB0E6;
+.statform {
+  margin: 0 auto;
+  width: 180px;
+  height: 180px;
+  position: absolute;
+  left: 60%;
+  top: -0%;
 }
-
-#mglass {margin-left: 5px;}
-
+.in {
+  clip-path: polygon(50% 5%, 3% 98%, 96% 97%);
+  background-color: #25486b;
+  background-position: 48% 42%;
+  animation-name: in-anim;
+}
+.out {
+  clip-path: polygon(50% 0, 0 100%, 100% 100%);
+  background-color: rgba(80, 220, 220, 0.4);
+  animation-name: out-anim;
+}
+li.label1 {
+  animation-name: label1-anim;
+}
+li.label2 {
+  animation-name: label2-anim;
+}
+li.label3 {
+  animation-name: label3-anim;
+}
+li.label4 {
+  animation-name: label4-anim;
+}
+@keyframes in-anim {
+  0%,
+  100%,
+  8% {
+    background-color: #561034;
+    clip-path: polygon(50% 66%, 28% 84%, 95% 98%);
+  }
+  25% {
+    background-color: #25486b;
+    clip-path: polygon(50% 7%, 5% 97%, 66% 82%);
+  }
+  50% {
+    background-color: #565034;
+    clip-path: polygon(50% 50%, 5% 97%, 95% 98%);
+  }
+  90% {
+    background-color: #3f3971;
+    clip-path: polygon(50% 7%, 28% 84%, 95% 97%);
+  }
+}
+@keyframes out-anim {
+  0%,
+  100%,
+  8% {
+    background-color: red;
+    clip-path: polygon(50% 61%, 23% 86%, 100% 100%);
+  }
+  25% {
+    background-color: #0ff;
+    clip-path: polygon(51% 1%, 0 100%, 69% 84%);
+  }
+  50% {
+    background-color: #ff0;
+    clip-path: polygon(50% 45%, 0 100%, 100% 100%);
+  }
+  90% {
+    background-color: #8d8ad9;
+    clip-path: polygon(50% 0, 23% 86%, 100% 100%);
+  }
+}
+@keyframes label1-anim {
+  0%,
+  10%,
+  100% {
+    background-color: #dd2941;
+  }
+  20%,
+  90% {
+    background-color: #282155;
+  }
+}
+@keyframes label2-anim {
+  0%,
+  10%,
+  100%,
+  40% {
+    background-color: #282155;
+  }
+  30% {
+    background-color: #0cbccc;
+  }
+}
+@keyframes label3-anim {
+  30%,
+  65% {
+    background-color: #282155;
+  }
+  50% {
+    background-color: #c9c815;
+  }
+}
+@keyframes label4-anim {
+  55%,
+  90% {
+    background-color: #282155;
+  }
+  65%,
+  85% {
+    background-color: #c9c;
+  }
+}
 
 /* ---------------------------------------------------------------------TESTING CODE HERE--------------------------------------------------------------------- */
