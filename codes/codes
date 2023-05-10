@@ -83,3 +83,27 @@
 </body>
 
 </html>
+
+
+animHTML.classList.add('html');
+animCSS.classList.add('css');
+animJAVASCRIPT.classList.add('javascript');
+animJQUERY.classList.add('jquery');
+animPHP.classList.add('php');
+animSQL.classList.add('sql');
+animJAVA.classList.add('java');
+animPYTHON.classList.add('python');
+animCPLUSPLUS.classList.add('cPlusPlus');
+animCSHARP.classList.add('cSharp');
+animXD.classList.add('xd');
+animILLUSTRATOR.classList.add('illustrator');
+animPHOTOSHOP.classList.add('photoshop');
+animANIMATE.classList.add('animate');
+animPREMIER.classList.add('premier');
+animEXCEL.classList.add('excel');
+animPOWERPOINT.classList.add('powerpoint');
+animWORD.classList.add('word');
+animTABLEAU.classList.add('tableau');
+animUIPATH.classList.add('uipath');
+animINVENTOR.classList.add('inventor');
+animDAVINCI.classList.add('davinci');
