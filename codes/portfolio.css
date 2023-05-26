@@ -1129,6 +1129,14 @@ max-width: 120%;
   margin-left: 20%;
 }
 
+.execiseTracker-description{
+  margin-top: 2vw;
+  margin-right: 16vw;
+  margin-left: 16vw;
+}
+
+
+
 
 .carousel-indicators [data-bs-target] {
   box-sizing: content-box;
