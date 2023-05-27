@@ -804,110 +804,247 @@ a:link {
 	z-index: -1;
   }
 
-.contactUs-main-container{
-	display: flex;
-	justify-content: center;
-}
-
-.contactUs-banner {
-	margin-top: 5%;
-	display: flex;
-	height: fit-content;
-	position: relative;
-	margin-bottom: 5vw;
-	width: 80vw;
-	max-width: 100%;
-	background-color: aliceblue;
-	border-radius: 30px;
-	justify-content: space-evenly;
-  }
-
-#white-segreator{
-	position: fixed;
-	bottom: 0;
-	width: 100%;
-	height: 30%;
-	background-color: #ddd;
-	z-index: -1;
-}
-
-.contactUs-Seperator{
-	border-left: 5px ridge black;
-	box-shadow: 0px 0px 10px 4px blue;
-	align-items: center;
-	max-width: 0;
-  	left: 20%;
-}
-.forForm{
-	margin-top: 4%;
-}
-
-/* Style inputs with type="text", select elements and textareas */
-.forForm input[type=text], select, textarea {
-	width: 100%; /* Full width */
-	padding: 8px; /* Some padding */ 
-	border: 1px solid #ccc; /* Gray border */
-	border-radius: 4px; /* Rounded borders */
-	box-sizing: border-box; /* Make sure that padding and width stays in place */
-	margin-top: 6px; /* Add a top margin */
-	margin-bottom: 16px; /* Bottom margin */
-	resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+  .contactUs-main-container{
+    display: flex;
+    justify-content: center;
   }
   
-  /* Style the submit button with a specific background color etc */
-.forForm input[type=submit] {
-	background-color: #04AA6D;
-	color: white;
-	padding: 12px 20px;
-	border: none;
-	border-radius: 4px;
-	cursor: pointer;
+  .contactUs-banner {
+    margin-top: 5%;
+    display: flex;
+    height: fit-content;
+    position: relative;
+    margin-bottom: 5vw;
+    width: 80vw;
+    max-width: 100%;
+    background-color: aliceblue;
+    border-radius: 30px;
+    justify-content: space-evenly;
+    box-shadow: 0 15px 25px rgba(0,0,0,.6);
+    }
+  
+  
+  #white-segreator{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 30%;
+    background-color: #ddd;
+    z-index: -1;
   }
   
-  /* When moving the mouse over the submit button, add a darker green color */
-.forForm input[type=submit]:hover {
-	background-color: #45a049;
+  .contactUs-Seperator{
+    border-left: 5px ridge black;
+    box-shadow: 0px 0px 10px 4px blue;
+    align-items: center;
+    max-width: 0;
+      left: 20%;
   }
-  
-  /* Add a background color and some padding around the form */
-.container {
-	border-radius: 5px;
-	background-color: #f2f2f2;
-	padding: 20px;
-  }
-
-  .contactUs-right-container{
-display: flex;
-justify-content: center;
-max-width: 120%;
-  }
-
-
-
   .forForm{
-	margin-left: 2vw;
-	margin-right: 2vw;
+    margin-top: 4%;
   }
-
-
-
-  .newContact{
-	align-items: center;
+  
+    /* Add a background color and some padding around the form */
+  .container {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+    }
+  
+    .contactUs-right-container{
+  display: flex;
   justify-content: center;
-  padding-left: 2vw;
-  padding-right: 2vw;
-  margin-top: 5vw;
-  }
-
-  #contactPoint-boy{
-    width:200%;
+  max-width: 120%;
+    }
+  
+    .newContact{
+    align-items: center;
+    justify-content: center;
+    padding-left: 2vw;
+    padding-right: 2vw;
     margin-top: 5vw;
-  }
-
-  .icon-boxx{
-    border : 2px solid #ccc; 
-    border-radius: 50px;
-  }
+    }
+  
+    #contactPoint-boy{
+      width:200%;
+      margin-top: 5vw;
+    }
+  
+    .icon-boxx{
+      border : 2px solid #ccc; 
+      border-radius: 50px;
+    }
+  
+  
+  
+  
+  .contact-box {
+      position: relative;
+      top: 50%;
+      left: 40%;
+      width: 50vw;
+      padding: 40px;
+      /* margin: 10px auto; */
+      transform: translate(-50%, -55%);
+      background: aliceblue;
+      box-sizing: border-box;
+      box-shadow: 0 15px 25px rgba(0,0,0,.6);
+      border-radius: 10px;
+    }
+    
+    .contact-box p:first-child {
+      margin: 0 0 1vw;
+      padding: 0;
+      color: black;
+      text-align: center;
+      font-size: 1.5rem;
+      font-weight: bold;
+      letter-spacing: 1px;
+    }
+    
+    .contact-box .field-box {
+      position: relative;
+    }
+    
+    .contact-box .field-box input {
+      width: 100%;
+      padding: 10px 0;
+      font-size: 16px;
+      color: black;
+      margin-bottom: 30px;
+      border: none;
+      border-bottom: 1px solid black;
+      outline: none;
+      background: transparent;
+    }
+    
+    .contact-box .field-box label {
+      position: absolute;
+      top: 0;
+      left: 0;
+      padding: 10px 0;
+      font-size: 16px;
+      color: #00001a;
+      pointer-events: none;
+      transition: .5s;
+    }
+    
+    .contact-box .field-box input:focus ~ label,
+    .contact-box .field-box input:valid ~ label {
+      top: -20px;
+      left: 0;
+      color: #00001a;
+      font-size: 12px;
+    }
+    
+    .contact-box form a {
+      position: relative;
+      display: inline-block;
+      left:79%;
+      padding: 10px 20px;
+      font-weight: bold;
+      color: #00001a;
+      font-size: 16px;
+      text-decoration: none;
+      text-transform: uppercase;
+      overflow: hidden;
+      transition: .5s;
+      letter-spacing: 3px
+    }
+    
+    .contact-box a:hover {
+      background: #272727;
+      color: #fff;
+      border-radius: 5px;
+    }
+    
+    .contact-box a span {
+      position: absolute;
+      display: block;
+    }
+    
+    .contact-box a span:nth-child(1) {
+      top: 0;
+      left: -100%;
+      width: 100%;
+      height: 4px;
+      border-radius: 4px;
+      background: linear-gradient(90deg, transparent, red);
+      animation: btn-anim1 1.5s linear infinite;
+    }
+    
+    @keyframes btn-anim1 {
+      0% {
+        left: -100%;
+      }
+    
+      50%,100% {
+        left: 100%;
+      }
+    }
+    
+    .contact-box a span:nth-child(2) {
+      top: -100%;
+      right: 0;
+      width: 4px;
+      height: 100%;
+      border-radius: 4px;
+      background: linear-gradient(180deg, transparent, red);
+      animation: btn-anim2 1.5s linear infinite;
+      animation-delay: .5s
+    }
+    
+    @keyframes btn-anim2 {
+      0% {
+        top: -100%;
+      }
+    
+      50%,100% {
+        top: 100%;
+      }
+    }
+    
+    .contact-box a span:nth-child(3) {
+      bottom: 0;
+      right: -100%;
+      width: 100%;
+      height: 4px;
+      border-radius: 4px;
+      background: linear-gradient(270deg, transparent, red);
+      animation: btn-anim3 1.5s linear infinite;
+      animation-delay: .75s
+    }
+    
+    @keyframes btn-anim3 {
+      0% {
+        right: -100%;
+      }
+    
+      50%,100% {
+        right: 100%;
+      }
+    }
+    
+    .contact-box a span:nth-child(4) {
+      bottom: -100%;
+      left: 0;
+      width: 4px;
+      height: 100%;
+      border-radius: 4px;
+      background: linear-gradient(360deg, transparent, red);
+      animation: btn-anim4 1.5s linear infinite;
+      animation-delay: 1.125s
+    }
+    
+    @keyframes btn-anim4 {
+      0% {
+        bottom: -100%;
+      }
+    
+      50%,100% {
+        bottom: 100%;
+      }
+    }
 
 
 
