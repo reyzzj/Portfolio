@@ -697,10 +697,10 @@ a:link {
   gap: 2em;
 }
 
-.images-container-schoolworks {
+/* .images-container-schoolworks {
   display: flex;
   width: min-content;
-}
+} */
 
 .images img {
   width: 200px;
@@ -752,7 +752,284 @@ a:link {
   }
 
 
-.cardWork-container img:hover{
+  .schoolwork_pages .card {
+    overflow: visible;
+    width: 250px;
+    height: 250px;
+  }
+  
+  .schoolwork_pages .content {
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    transition: transform 300ms;
+    box-shadow: 0px 0px 10px 1px #000000ee;
+    border-radius: 5px;
+  }
+  
+  .schoolwork_pages .front,.schoolwork_pages .back {
+    background-color: #151515;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+    border-radius: 5px;
+    overflow: hidden;
+  }
+  
+  .schoolwork_pages .back {
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+  }
+  
+  .schoolwork_pages .back::before {
+    position: absolute;
+    content: ' ';
+    display: block;
+    width: 160px;
+    height: 160%;
+    background: linear-gradient(90deg, transparent, #66a3ff, #7366ff, #66f7ff, #72fff1, transparent);
+    animation: rotation_fcswp 5000ms infinite linear;
+  }
+  
+  .schoolwork_pages .back-content {
+    position: absolute;
+    width: 98%;
+    height: 98%;
+    background-color: #151515;
+    border-radius: 5px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+  }
+  
+  .schoolwork_pages .card:hover .content {
+    transform: rotateY(180deg);
+  }
+  
+  @keyframes rotation_fcswp {
+    0% {
+      transform: rotateZ(0deg);
+    }
+  
+    0% {
+      transform: rotateZ(360deg);
+    }
+  }
+  
+  .schoolwork_pages .front {
+    transform: rotateY(180deg);
+    color: white;
+  }
+  
+  .schoolwork_pages .front .front-content {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  .schoolwork_pages .front-content .badge {
+    background-color: #00000055;
+    padding: 2px 10px;
+    border-radius: 10px;
+    backdrop-filter: blur(2px);
+    width: fit-content;
+  }
+  
+  .schoolwork_pages .description {
+    box-shadow: 0px 0px 10px 5px #00000088;
+    width: 200%;
+    padding: 10px;
+    background-color: #00000099;
+    backdrop-filter: blur(5px);
+    border-radius: 5px;
+  }
+  
+  .schoolwork_pages .title {
+    font-size: 11px;
+    max-width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .schoolwork_pages .title p {
+    width: 50%;
+  }
+  
+  .schoolwork_pages .card-footer {
+    color: #ffffff88;
+    margin-top: 5px;
+    font-size: 8px;
+  }
+  
+  .schoolwork_pages .front .img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+  }
+  
+  .schoolwork_pages .circle {
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    background-color: #ffbb66;
+    position: relative;
+    filter: blur(15px);
+    animation: floating 2600ms infinite linear;
+  }
+  
+  .schoolwork_pages #bottom {
+    background-color: #ff8866;
+    left: 50px;
+    top: 0px;
+    width: 150px;
+    height: 150px;
+    animation-delay: -800ms;
+  }
+  
+  .schoolwork_pages #right {
+    background-color: #c52a92;
+    left: 160px;
+    top: -80px;
+    width: 30px;
+    height: 30px;
+    animation-delay: -1800ms;
+  }
+  
+  @keyframes floating {
+    0% {
+      transform: translateY(0px);
+    }
+  
+    50% {
+      transform: translateY(10px);
+    }
+  
+    100% {
+      transform: translateY(0px);
+    }
+  }
+
+
+
+
+  .schoolwork_pages .card button {
+    margin-top: 5%;
+    padding: 8px 20px;
+    background-color: #000;
+    border: none;
+    font-size: 10px;
+    position: relative;
+    /* overflow: hidden; */
+    transition: 500ms;
+  }
+  
+  .schoolwork_pages .card button span {
+    color: gray;
+    position: relative;
+    transition: 500ms;
+    transition-delay: 500ms;
+    font-size: 10px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 600;
+  }
+  
+  .schoolwork_pages .card button:before {
+    /* content: ''; */
+    position: absolute;
+    width: 0%;
+    height: 0%;
+    left: 50%;
+    right: 50%;
+    top: 50%;
+    bottom: 50%;
+    transition: 500ms;
+    transition-delay: 500ms;
+    /* background-color: red;
+    box-shadow: 0 0 10px red,
+     0 0 30px red, 
+     0 0 50px red; */
+  }
+  
+  .schoolwork_pages .card button div {
+    transition: 500ms;
+    position: absolute;
+    background-color: red;
+    box-shadow: 0 0 15px red, 0 0 30px red, 0 0 50px red;
+  }
+  
+  .schoolwork_pages .card button .top {
+    width: 15px;
+    height: 2px;
+    top: 0;
+    left: 0;
+  }
+  
+  .schoolwork_pages .card button .bottom {
+    width: 15px;
+    height: 2px;
+    bottom: 0;
+    right: 0;
+  }
+  
+  .schoolwork_pages .card button .left {
+    width: 2px;
+    height: 15px;
+    top: 0;
+    left: 0;
+  }
+  
+  .schoolwork_pages .card button .right {
+    width: 2px;
+    height: 15px;
+    bottom: 0;
+    right: 0;
+  }
+  
+  .schoolwork_pages .card button:hover {
+    color: greenyellow;
+  }
+  
+  .schoolwork_pages .card button:hover span {
+    color: greenyellow;
+  }
+  
+  .schoolwork_pages .card button:hover:before {
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
+  
+  .schoolwork_pages .card button:hover .top, 
+  .schoolwork_pages .card button:hover .bottom {
+    width: 100%;
+  }
+  
+  .schoolwork_pages .card button:hover .left,
+  .schoolwork_pages .card button:hover .right {
+    height: 100%;
+  }
+
+
+/* .cardWork-container img:hover{
 	filter: blur(3px) brightness(0.5);
 	
   }
@@ -770,16 +1047,16 @@ a:link {
 .cardWork-container:hover .hidenameLogo {
 	opacity: 1;
 	padding: 0;
-  }
+  } */
 
 /* Javascript classes */
 
-.images .img-expand {
-  width: 200px;
-  height: 200px;
+.images .card-expand {
+  width: 250px;
+  height: 250px;
   margin: 1em;
 }
-.images .img-shrink {
+.images .card-shrink {
   width: 0em;
   height: 0em;
   margin: -1em;
@@ -1330,7 +1607,7 @@ a:link {
     width: 100%;
     display: block;
   }
-  .images .img-expand,
+  .images .card-expand,
   .images img {
     width: 100%;
   }

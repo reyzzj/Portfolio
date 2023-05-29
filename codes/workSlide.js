@@ -1,7 +1,7 @@
 //Get elements from DOM
 
 const btns = document.querySelectorAll('.buttons button');
-const imgs = document.querySelectorAll('.images img');
+const cards = document.querySelectorAll('.images .card');
 const text = document.querySelectorAll('images .text-schwork')
 
 //add a click event to all buttons
@@ -27,25 +27,25 @@ function filterImg(e) {
     //Run the active button function
     setActiveBtn(e);
      //Loop through all images
-     imgs.forEach(img => {
+     cards.forEach(div => {
         //Expand all images
-        img.classList.remove('img-shrink');
-        img.classList.remove('text-schwork-shrink');
-        img.classList.add('img-expand');
-        img.classList.add('text-schwork-expand');
+        div.classList.remove('card-shrink');
+        div.classList.remove('text-schwork-shrink');
+        div.classList.add('card-expand');
+        div.classList.add('text-schwork-expand');
 
         //Get data from data attributes
-        //Get image type data
-        const imgType = parseInt(img.dataset.img);
+        //Get div type data
+        const imgType = parseInt(div.dataset.div);
         //Get button type data
         const btnType = parseInt(e.target.dataset.btn);
         //If the image type and the type of click button are not the same
         if(imgType !== btnType){
             //Hide the image
-            img.classList.remove('img-expand');
-            img.classList.remove('text-schwork-shrink');
-            img.classList.add('img-shrink');
-            img.classList.add('text-schwork-expand');
+            div.classList.remove('card-expand');
+            div.classList.remove('text-schwork-shrink');
+            div.classList.add('card-shrink');
+            div.classList.add('text-schwork-expand');
         }
      });
 }
@@ -56,11 +56,11 @@ btns[0].addEventListener('click',(e) => {
     //Run the active button function
     setActiveBtn(e);
     //Loop through all images
-    imgs.forEach(img => {
+    cards.forEach(div => {
         //Expand all images
-        img.classList.remove('img-shrink');
-        img.classList.remove('text-schwork-shrink');
-        img.classList.add('img-expand');
-        img.classList.add('text-schwork-expand');
+        div.classList.remove('card-shrink');
+        div.classList.remove('text-schwork-shrink');
+        div.classList.add('card-expand');
+        div.classList.add('text-schwork-expand');
     });
 });
