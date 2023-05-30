@@ -132,6 +132,9 @@ a:link {
   margin-left: 5%;
 }
 
+
+@keyframes s6 {to{transform: rotate(1turn)}}
+
 .home-content-container {
   display: flex;
   justify-content: space-between;
@@ -655,6 +658,17 @@ a:link {
 
 
 /* ------------------------------------------------------Filter With Animation---------------------------------------------------- */
+.schoolwork_pages{
+  background-image: url('../images/abstract blue backgrounds/pastel blue.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  max-height: 100%;
+  width: 100%;
+  z-index: -1;
+}
+
+
 .gallery {
   padding: 2em;
   min-height: 120vh;
@@ -1550,6 +1564,56 @@ a:link {
 }
 
 
+.PHPHOTEMLS-main-container{
+	display: flex;
+	justify-content: space-evenly;
+	margin-top: 4%;
+	margin-left: 16vw;
+	margin-right: 16vw;
+  border : 4px solid #aaa; 
+  background-color: antiquewhite;
+  border-radius: 10px;
+  }
+
+  .PHPHOTEMLS-main-container-left{
+    margin: 2vw;
+    padding: 1vw;
+
+  }
+
+  .PHPHOTEMLS-main-container-right{
+    margin: 2vw;
+    padding: 1vw;
+
+  }
+
+  .phpHotels-pages{
+    max-width: 100%;
+  }
+
+  .phpHotels .carousel-control-prev-icon{
+    background-color: #023047;
+    border-radius: 50px;
+    margin-right: 20%;
+  }
+  
+  .phpHotels .carousel-control-next-icon{
+    background-color: #023047;
+    border-radius: 50px;
+    margin-left: 20%;
+  }
+
+  .phpHotels{
+    background-image: url('../images/abstract blue backgrounds/pastel blue.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    max-height: 100%;
+    width: 100%;
+    z-index: -1;
+  }
+
+
 
 
 .carousel-indicators [data-bs-target] {
@@ -1585,12 +1649,12 @@ a:link {
 }
 
 /* ------------------------------------------------------Filter With Animation Mobile---------------------------------------------------- */
-
+/* 
 @media screen and (max-width: 1439px) {
   .images {
     max-width: 896px;
   }
-}
+} */
 @media screen and (max-width: 986px) {
   .images {
     align-items: center;
