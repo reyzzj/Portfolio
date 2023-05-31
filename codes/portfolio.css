@@ -2173,6 +2173,62 @@ a:link {
   }
 
 
+  .AtoZ_pages{
+    background-image: url('../images/abstract blue backgrounds/pastel blue.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    max-height: 100%;
+    width: 100%;
+    z-index: -1;
+  }
+
+  .Atoz-main{
+    margin-top: 3%;
+    padding-top: 3%;
+    margin-left: 12vw;
+    margin-right: 12vw;
+  border : 4px solid #aaa; 
+  background-color: antiquewhite;
+  border-radius: 10px;
+  }
+
+  .AtoZ-main-container{
+	display: flex;
+	justify-content: space-evenly;
+  }
+
+  .Atoz-main-container-left{
+    margin: 2vw;
+    padding: 1vw;
+    border : 4px solid #0c5f5f; 
+    border-radius: 10px;
+
+  }
+  .Atoz-main-container-middle{
+    margin: 2vw;
+    padding: 1vw;
+    border : 4px solid #0c5f5f; 
+    border-radius: 10px;
+
+  }
+
+  .Atoz-main-container-right{
+    margin: 2vw;
+    padding: 1vw;
+    border : 4px solid #0c5f5f; 
+    border-radius: 10px;
+
+  }
+  .Atoz-main-container-right2{
+    margin: 2vw;
+    padding: 1vw;
+    border : 4px solid #0c5f5f; 
+    border-radius: 10px;
+
+  }
+
+
 
 
 .carousel-indicators [data-bs-target] {
