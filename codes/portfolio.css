@@ -1879,6 +1879,39 @@ a:link {
   }
   
 
+  .nescafeAd-page{
+    background-image: url('../images/abstract blue backgrounds/pastel blue.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    max-height: 100%;
+    width: 100%;
+    z-index: -1;
+  }
+
+  .nescafeAd-main-container{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 4%;
+    margin-left: 16vw;
+    margin-right: 16vw;
+    border : 4px solid #aaa; 
+    background-color: antiquewhite;
+    border-radius: 10px;
+    }
+  
+    .nescafeAd-main-container-left{
+      margin: 2vw;
+      padding: 1vw;
+  
+    }
+  
+    .nescafeAd-main-container-right{
+      margin: 2vw;
+      padding: 1vw;
+  
+    }
+
 
 
 
