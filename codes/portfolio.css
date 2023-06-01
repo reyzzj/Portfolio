@@ -1470,7 +1470,9 @@ a:link {
       justify-content: center;
     }
     
-    .wrapper .icon {
+    .wrapper .icon,
+    .wrapper .icon a:link,
+    .wrapper .icon a:visited {
       position: relative;
       background: #fff;
       border-radius: 50%;
