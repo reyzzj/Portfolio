@@ -119,14 +119,35 @@ a:link {
   box-sizing: content-box;
 } */
 
-.navbar input[type="text"] {
+.input {
+  background-color: #212121;
+  max-width: 190px;
+  margin-right: 5vw;
+  height: 40px;
+  padding: 10px;
+  /* text-align: center; */
+  border: 2px solid white;
+  border-radius: 5px;
+  /* box-shadow: 3px 3px 2px rgb(249, 255, 85); */
+}
+
+.input:focus {
+  color: rgb(0, 255, 255);
+  background-color: #212121;
+  outline-color: rgb(0, 255, 255);
+  box-shadow: -3px -3px 15px rgb(0, 255, 255);
+  transition: .1s;
+  transition-property: box-shadow;
+}
+
+/* .navbar input[type="text"] {
   float: right;
   padding: 6px;
   border: none;
   margin-top: 8px;
   margin-right: 5vw;
   font-size: 17px;
-}
+} */
 
 #main-frame {
   /* margin-top: 10vw; */
