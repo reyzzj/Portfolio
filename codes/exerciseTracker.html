@@ -1,149 +1,179 @@
 <html lang="en-US">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width" />
-    <title>My Portfolio</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width" />
+  <title>My Portfolio</title>
 
-    <!--Bootstrap Link-->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css">
-    <!--JQuery Link-->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
-    <!--ChartJS link-->
-    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-    <!--Font Awesome-->
-    <script src="https://kit.fontawesome.com/e5b23eedf4.js" crossorigin="anonymous"></script>
+  <!--Bootstrap Link-->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css">
+  <!--JQuery Link-->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+  <!--ChartJS link-->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <!--Font Awesome-->
+  <script src="https://kit.fontawesome.com/e5b23eedf4.js" crossorigin="anonymous"></script>
 
-    <!--External Links-->
-    <link rel="stylesheet" type="text/css" href="../codes/portfolio.css">
+  <!--External Links-->
+  <link rel="stylesheet" type="text/css" href="../codes/portfolio.css">
 
 
 </head>
 
 <body class="exerciseTracker">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
 
 
-    <nav class="navbar navbar-expand-sm">
+  <nav class="navbar navbar-expand-sm">
 
-        <div class="container-fluid">
-            <div class="left-nav-menu">
-                <a class="navbar-brand" href="home.html">
-                    <img id="navbar-main-logo" class="border-gradient border-gradient-purple" src="../images/logo2.PNG"
-                        alt="Main Logo">
+    <div class="container-fluid">
+      <div class="left-nav-menu">
+        <a class="navbar-brand" href="home.html">
+          <img id="navbar-main-logo" class="border-gradient border-gradient-purple" src="../images/logo2.PNG"
+            alt="Main Logo">
+        </a>
+      </div>
+      <div class="middle-nav-menu">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-center" id="mynavbar">
+          <ul class="navbar-nav me-auto mx-3">
+            <li class="nav-item">
+              <a class="nav-link active" href="about.html">About</a>
+            </li>
+            <li class="nav-item">
+              <div class="dropdown">
+
+                <a href="work.html" class="nav-link dropbtn">
+                  Portfolio
                 </a>
-            </div>
-            <div class="middle-nav-menu">
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse justify-content-center" id="mynavbar">
-                    <ul class="navbar-nav me-auto mx-3">
-                        <li class="nav-item">
-                            <a class="nav-link" href="about.html">About</a>
-                        </li>
-                        <li class="nav-item">
-                            <div class="dropdown">
-
-                                <a href="work.html" class="nav-link dropbtn">
-                                    Portfolio
-                                </a>
-                                <div class="dropdown-content">
-                                    <a href="schoolworks.html">School Works</a>
-                                    <a href="pagenotready.html">Personal Works</a>
-                                    <a href="pagenotready.html">Projects</a>
-                                    <a href="pagenotready.html">FYP</a>
-                                </div>
-                            </div>
-
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="contact.html">Contact</a>
-                        </li>
-                    </ul>
+                <div class="dropdown-content">
+                  <a href="schoolworks.html">School Works</a>
+                  <a href="pagenotready.html">Personal Projects</a>
+                  <a href="FYP.html">FYP</a>
                 </div>
-            </div>
-            <div class="middle-nav-menu">
+              </div>
 
-
-                <div class="search-container">
-                    <input type="text" placeholder="Search..">
-                    <!-- <input class="form-control" type="text" id="input" placeholder="Search" /> -->
-                </div>
-            </div>
-
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+          </ul>
         </div>
-    </nav>
-    <br><br>
+      </div>
+      <div class="middle-nav-menu">
+
+
+        <div class="search-container">
+          <input placeholder="Search" class="input" name="text" type="text">
+          <!-- <input class="form-control" type="text" id="input" placeholder="Search" /> -->
+        </div>
+      </div>
+
+    </div>
+  </nav>
+  <br><br>
+
+
+  <div class="exetracker-main-container">
+    <br>
     <center>
-        <h1>Exercise Tracker</h1>
+      <h1>Exercise Tracker</h1>
     </center>
+    <!-- Carousel -->`
+    <div id="demo" class="carousel slide" data-bs-ride="carousel">
 
-    <div class="exetracker-main-container">
-        <!-- Carousel -->`
-        <div id="demo" class="carousel slide" data-bs-ride="carousel">
-
-            <!-- Indicators/dots -->
-            <div class="carousel-indicators">
-                <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active">1</button>
-                <button type="button" data-bs-target="#demo" data-bs-slide-to="1">2</button>
-                <button type="button" data-bs-target="#demo" data-bs-slide-to="2">3</button>
+      <!-- Indicators/dots -->
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active">1</button>
+        <button type="button" data-bs-target="#demo" data-bs-slide-to="1">2</button>
+        <button type="button" data-bs-target="#demo" data-bs-slide-to="2">3</button>
 
 
 
-            </div>
+      </div>
 
-            <!-- The slideshow/carousel -->
-            <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <div class="mx-5 card-group">
-                        <img class="exeTracker-pages"
-                            src="../images/WorksPic/Front End GA - c219/Exercise Tracker page 1.PNG">
-                    </div>
+      <!-- The slideshow/carousel -->
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <div class="mx-5 card-group">
+            <img class="exeTracker-pages" src="../images/WorksPic/Front End GA - c219/Exercise Tracker page 1.PNG">
+          </div>
 
-                </div>
-                <div class="carousel-item">
-                    <div class="mx-5 card-group">
-                        <img class="exeTracker-pages"
-                            src="../images/WorksPic/Front End GA - c219/Exercise Tracker page 2.PNG">
-                    </div>
-
-                </div>
-                <div class="carousel-item">
-                    <div class="mx-5 card-group">
-                        <img class="exeTracker-pages"
-                            src="../images/WorksPic/Front End GA - c219/Exercise Tracker page 3.PNG">
-                    </div>
-
-                </div>
-
-
-
-            </div>
-
-            <!-- Left and right controls/icons -->
-            <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
-                <span class="carousel-control-prev-icon"></span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
-                <span class="carousel-control-next-icon"></span>
-            </button>
         </div>
+        <div class="carousel-item">
+          <div class="mx-5 card-group">
+            <img class="exeTracker-pages" src="../images/WorksPic/Front End GA - c219/Exercise Tracker page 2.PNG">
+          </div>
+
+        </div>
+        <div class="carousel-item">
+          <div class="mx-5 card-group">
+            <img class="exeTracker-pages" src="../images/WorksPic/Front End GA - c219/Exercise Tracker page 3.PNG">
+          </div>
+
+        </div>
+
+
+
+      </div>
+
+      <!-- Left and right controls/icons -->
+      <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+        <span class="carousel-control-next-icon"></span>
+      </button>
     </div>
+
     <div class="execiseTracker-description pb-5">
-        <h4>Short Description</h4>
-        <p>Exercise tracker was make to let the user enter their own username to proceed on to choose their level 1,2
-            and
-            3, the user then have to clear level 1 then can proceed to level 2 and subsequently. The highest level is
-            level
-            3.
-            The 3rd page will require the user to enter the duration that he/she exercise, it will then be calculated if
-            the
-            user meet the requirement which is more than 10 hours a week to move on to level 2.</p>
-        <h4>Thought process</h4>
-        <p>The colors are made very light and clear so that it will be soothing to the eye and, without too much
-            animation to make the website feels extremely overwhelmed and have a cool vibes at the same time.</p>
+      <h4>Short Description</h4>
+      <p>Exercise tracker was make to let the user enter their own username to proceed on to choose their level 1,2
+        and
+        3, the user then have to clear level 1 then can proceed to level 2 and subsequently. The highest level is
+        level
+        3.
+        The 3rd page will require the user to enter the duration that he/she exercise, it will then be calculated if
+        the
+        user meet the requirement which is more than 10 hours a week to move on to level 2.</p>
+      <h4>Thought process</h4>
+      <p>The colors are made very light and clear so that it will be soothing to the eye and, without too much
+        animation to make the website feels extremely overwhelmed and have a cool vibes at the same time.</p>
     </div>
+    <hr>
+        <hr>
+        <hr>
+        <div class="exerciseTracker-buttons-external">
+            <center>
+                <a href="https://github.com/reyzzj/Exercise-Tracker/tree/main">
+                    <button>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        Click here to see code in repository
+                    </button>
+                </a>
+            </center>
+            <hr>
+            <hr>
+            <hr>
+            <center>
+                <a href="https://reyzzj.github.io/Exercise-Tracker/Exercise%20Tracker/Website/index.html">
+                    <button>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        Click here to see website
+                    </button>
+                </a>
+            </center>
+        </div>
+        <br><br>
+  </div>
 </body>
 
 </html>

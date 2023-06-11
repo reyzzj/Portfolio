@@ -27,7 +27,6 @@
 
   <!-- nav bar -->
   <nav class="navbar navbar-expand-sm">
-
     <div class="container-fluid">
       <div class="left-nav-menu">
         <a class="navbar-brand" href="home.html">
@@ -41,56 +40,65 @@
         </button>
         <div class="collapse navbar-collapse justify-content-center" id="mynavbar">
           <ul class="navbar-nav me-auto mx-3">
-            <li class="nav-item">
+            <li class="nav-item" id="about">
               <a class="nav-link" href="about.html">About</a>
             </li>
-            <li class="nav-item">
+            <li class="nav-item" id="portfolio">
               <div class="dropdown">
-
                 <a href="work.html" class="nav-link dropbtn">
                   Portfolio
                 </a>
                 <div class="dropdown-content">
-                  <a href="schoolworks.html">School Works</a>
-                  <a href="pagenotready.html">Personal Works</a>
-                  <a href="pagenotready.html">Projects</a>
-                  <a href="pagenotready.html">FYP</a>
+                  <a href="schoolworks.html" id="schoolworks">School Works</a>
+                  <a href="pagenotready.html" id="personalprojects">Personal Projects</a>
+                  <a href="FYP.html" id="fyp">FYP</a>
                 </div>
               </div>
-
             </li>
-            <li class="nav-item">
+            <li class="nav-item" id="contact">
               <a class="nav-link" href="contact.html">Contact</a>
             </li>
           </ul>
         </div>
       </div>
       <div class="middle-nav-menu">
-
-
         <div class="search-container">
-          <input type="text" placeholder="Search..">
-          <!-- <input class="form-control" type="text" id="input" placeholder="Search" /> -->
+          <input placeholder="Search" class="input" name="text" type="text">
         </div>
       </div>
-
     </div>
   </nav>
+
+  <script>
+    var currentURL = window.location.href;
+    var filename = currentURL.substring(currentURL.lastIndexOf("/") + 1);
+    filename = filename.replace(".html", "");
+
+    // Add "active" class to the portfolio category if any of its items are active or if on the main portfolio page
+    if (filename === "work" || filename === "schoolworks" || filename === "pagenotready" || filename === "FYP") {
+      document.getElementById("portfolio").classList.add("active");
+    } else {
+      var navItem = document.getElementById(filename);
+      if (navItem) {
+        navItem.classList.add("active");
+      }
+    }
+  </script>
   <div class="aboutMe-seperator">
     <div class="vertical"></div>
 
   </div>
   <div class="aboutMe-mainBorder">
     <div class="aboutMe-sideNav">
-      <p>About Me</p>
-      <p>Technical Skills</p>
-      <p>Soft Skills</p>
-      <p>Language</p>
-      <p>Hobbies</p>
 
+      <a href="#aboutMe-aboutMe-main"><p class="sideNavItem">&nbspAbout Me</p> </a>
+      <a href="#aboutMe-technicalSkills-main"></a> <p class="sideNavItem">&nbspTechnical Skills</a></p> 
+      <a href="#aboutMe-softSkillz-main"> <p class="sideNavItem">&nbspSoft Skills</p> </a>
+      <a href="#"> <p class="sideNavItem">&nbspLanguage</p> </a>
+      <a href="#"> <p class="sideNavItem">&nbspHobbies</p> </a>
     </div>
 
-    <div class="aboutMe-aboutMe-main">
+    <div id="aboutMe-aboutMe-main">
       <div class="aboutMe-aboutMe-left">
         <h1>About Me</h1>
         <p>
@@ -175,7 +183,7 @@
     </g>
   </svg>
   
-  <div class="aboutMe-technicalSkills-main">
+  <div id="aboutMe-technicalSkills-main">
     <br>
     <h1 id="aboutMe-TechnicalSkillz"> &nbsp&nbsp&nbsp&nbsp Technical Skills</h1>
     <div class="skillsContainer">
@@ -366,7 +374,7 @@
       </g>
     </g>
   </svg>
-<div class="aboutMe-softSkillz-main">
+<div id="aboutMe-softSkillz-main">
 <h1>Soft skills</h1>
 <p>Analytical and Critical Thinking</p>
 <p>Creative Thinking</p>

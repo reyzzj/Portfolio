@@ -25,7 +25,6 @@
 
   <!-- nav bar -->
   <nav class="navbar navbar-expand-sm">
-
     <div class="container-fluid">
       <div class="left-nav-menu">
         <a class="navbar-brand" href="home.html">
@@ -39,12 +38,11 @@
         </button>
         <div class="collapse navbar-collapse justify-content-center" id="mynavbar">
           <ul class="navbar-nav me-auto mx-3">
-            <li class="nav-item">
+            <li class="nav-item" id="about">
               <a class="nav-link" href="about.html">About</a>
             </li>
-            <li class="nav-item">
+            <li class="nav-item" id="portfolio">
               <div class="dropdown">
-
                 <a href="work.html" class="nav-link dropbtn">
                   Portfolio
                 </a>
@@ -54,25 +52,36 @@
                   <a href="FYP.html">FYP</a>
                 </div>
               </div>
-
             </li>
-            <li class="nav-item">
+            <li class="nav-item" id="contact">
               <a class="nav-link" href="contact.html">Contact</a>
             </li>
           </ul>
         </div>
       </div>
       <div class="middle-nav-menu">
-
-
         <div class="search-container">
           <input placeholder="Search" class="input" name="text" type="text">
-          <!-- <input class="form-control" type="text" id="input" placeholder="Search" /> -->
         </div>
       </div>
-
     </div>
   </nav>
+
+  <script>
+    var currentURL = window.location.href;
+    var filename = currentURL.substring(currentURL.lastIndexOf("/") + 1);
+    filename = filename.replace(".html", "");
+
+    // Add "active" class to the portfolio dropdown if any of its items are active
+    if (filename === "work" || filename === "schoolworks" || filename === "pagenotready" || filename === "FYP") {
+      document.getElementById("portfolio").classList.add("active");
+    } else {
+      var navItem = document.getElementById(filename);
+      if (navItem) {
+        navItem.classList.add("active");
+      }
+    }
+  </script>
   <div class="home-content-container">
     <div class="home-left-content-container">
 
@@ -2701,7 +2710,7 @@
         </defs>
         <g id="Layer_2" data-name="Layer 2">
           <image width="2362" height="2362" transform="translate(325.84 88.9) scale(.29)"
-            xlink:href="../images/my pic png circle.png"/>
+            xlink:href="../images/my pic png circle.png" />
         </g>
         <g id="Layer_1" data-name="Layer 1">
           <path class="cls-274"
@@ -3247,9 +3256,9 @@
 
 
     </div>
-    
+
     <a href="../Project Rationale-ZJ.docx"></a>
-  
+
 
 
 
