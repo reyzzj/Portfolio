@@ -257,7 +257,7 @@ a:link {
   border-radius: 20px;
 }
 
-#aboutMe-technicalSkills-main {
+.aboutMe-technicalSkills-main {
   justify-content: space-between;
   margin-top: 2vw;
   max-width: 62vw;
