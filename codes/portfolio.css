@@ -1364,26 +1364,6 @@ a:link {
   }
 
 
-/* .cardWork-container img:hover{
-	filter: blur(3px) brightness(0.5);
-	
-  }
-  
-.cardWork-container:hover .hideMINDS {
-	opacity: 1;
-	padding: 0;
-  }
-
-.cardWork-container:hover .hideBPA {
-	opacity: 1;
-	padding: 0;
-  }
-
-.cardWork-container:hover .hidenameLogo {
-	opacity: 1;
-	padding: 0;
-  } */
-
 /* Javascript classes */
 
 .images .card-expand {
@@ -1404,6 +1384,7 @@ a:link {
 .images .text-schwork-shrink{
 	opacity: 0;
 }
+
 
 
 /* -------------------------------------contact us page ------------------------------------------------------------*/
