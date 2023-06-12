@@ -184,12 +184,16 @@ a:link {
 
 .aboutMe-sideNav {
   position: fixed;
-  margin-left: 7%;
+  margin-left: 4vw;
   padding-left: 1%;
   top: 20vw;
   background-color: #222;
   padding: 20px;
+  border-style: solid;
   border-radius: 20px;
+  border-color: #A6F1A6;
+  border-width: 2px;
+  box-shadow: 0px 0px 10px 1px #000000ee;
 }
 
 
@@ -228,6 +232,17 @@ a:link {
   left: 20vw;
   top: 0;
   transform: translateX(-50%);
+  z-index: -2;
+}
+
+.aboutme_pages{
+  background-image: url('../images/abstract blue backgrounds/vecteezy_blue-abstract-background-blue-background-design-abstract_6998394.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  max-height: 100%;
+  width: 100%;
+  z-index: -1;
 }
 
 .aboutMe-mainBorder {
@@ -255,6 +270,7 @@ a:link {
   margin-right: 2vw;
   border: 2px groove greenyellow;
   border-radius: 20px;
+  box-shadow: 0px 0px 10px 1px #000000ee;
 }
 
 .aboutMe-technicalSkills-main {
@@ -265,6 +281,7 @@ a:link {
   background-color: #fffdd6;
   border: 5px groove #023047;
   border-radius: 20px;
+  box-shadow: 0px 0px 20px 1px #000000ee;
 }
 
 #aboutMe-TechnicalSkillz {
@@ -703,11 +720,158 @@ a:link {
 }
 
 #aboutMe-softSkillz-main {
-	justify-content: space-between;
+  display: flex;
+	justify-content: center;
+  padding-top: 15vw;
+  padding-bottom: 15vw;
 	margin-top: 2vw;
 	max-width: 72vw;
 	margin-left: 22%;
   }
+
+
+  .aboutme_pages #aboutMe-softSkillz-main #check {
+    display: none;
+}
+
+/* Set the icon width, height and position */
+.aboutme_pages #aboutMe-softSkillz-main .main,
+.aboutme_pages #aboutMe-softSkillz-main .icons {
+    margin: auto;
+    position: absolute;
+    
+    width: 220px;
+    height: 50px;
+    border-radius: 40px;
+}
+
+/* Set the style of menu button */
+.aboutme_pages #aboutMe-softSkillz-main .main {
+    background-color: #000080;
+    cursor: pointer;
+    z-index: 50;
+    box-shadow: 0px 0px 30px 7px #000080;
+}
+
+/* Set the position, height and width of menu button */
+.aboutme_pages #aboutMe-softSkillz-main .main .title {
+    margin: auto;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 80px;
+    font-size: 20px;
+    line-height: 80px;
+    text-align: center;
+    color: white;
+
+
+}
+
+/* Set position, height and width of buttons */
+.aboutme_pages #aboutMe-softSkillz-main .button {
+    margin: auto;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 200px;
+    height: 45px;
+    border-radius: 16px;
+    transition: all 0.4s ease-in;
+}
+
+.aboutme_pages #aboutMe-softSkillz-main .button span {
+    width: 100%;
+    font-size: 16px;
+    line-height: 50px;
+    text-align: center;
+    color: white;
+    
+
+}
+
+.aboutme_pages #aboutMe-softSkillz-main .button {
+    border: 2px solid black;
+    box-shadow: 0px 0px 10px 2px #22A699;
+}
+
+/* Positioning of buttons */
+.aboutme_pages #aboutMe-softSkillz-main #check:checked~.main+.icons .button {
+    opacity: 0.8;
+}
+
+.aboutme_pages #aboutMe-softSkillz-main #check:checked~.main+.icons .button:nth-of-type(1) {
+    top: -120%;
+    left: -300%;
+    background-color: #22A699;
+    transition-delay: 0.2s;
+}
+
+.aboutme_pages #aboutMe-softSkillz-main #check:checked~.main+.icons .button:nth-of-type(2) {
+    top: -400%;
+    left: -150%;
+    background-color: #22A699;
+    transition-delay: 0.4s;
+}
+
+.aboutme_pages #aboutMe-softSkillz-main #check:checked~.main+.icons .button:nth-of-type(3) {
+    top: -640%;
+    background-color: #22A699;
+    transition-delay: 0.6s;
+}
+
+.aboutme_pages #aboutMe-softSkillz-main #check:checked~.main+.icons .button:nth-of-type(4) {
+    top: -400%;
+    right: -150%;
+    background-color: #22A699;
+    transition-delay: 0.8s;
+}
+
+.aboutme_pages #aboutMe-softSkillz-main #check:checked~.main+.icons .button:nth-of-type(5) {
+    top: -120%;
+    right: -300%;
+    background-color: #22A699;
+    transition-delay: 1s;
+}
+
+.aboutme_pages #aboutMe-softSkillz-main #check:checked~.main+.icons .button:nth-of-type(6) {
+    top: 120%;
+    left: -300%;
+    background-color: #22A699;
+    transition-delay: 2s;
+}
+
+.aboutme_pages #aboutMe-softSkillz-main #check:checked~.main+.icons .button:nth-of-type(7) {
+    top: 250%;
+    left: -150%;
+    background-color: #22A699;
+    transition-delay: 1.8s;
+}
+
+.aboutme_pages #aboutMe-softSkillz-main #check:checked~.main+.icons .button:nth-of-type(8) {
+    top: 380%;
+    background-color: #22A699;
+    transition-delay: 1.6s;
+}
+
+.aboutme_pages #aboutMe-softSkillz-main #check:checked~.main+.icons .button:nth-of-type(9) {
+    top: 250%;
+    right: -150%;
+    background-color: #22A699;
+    transition-delay: 1.4s;
+}
+
+.aboutme_pages #aboutMe-softSkillz-main #check:checked~.main+.icons .button:nth-of-type(10) {
+    top: 120%;
+    right: -300%;
+    background-color: #22A699;
+    transition-delay: 1.2s;
+}
 /*--------------------------------------------works main page---------------------------------------------------------*/
 
 
