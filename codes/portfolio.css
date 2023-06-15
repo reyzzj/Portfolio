@@ -177,6 +177,16 @@ div.chat-wrapper[opened="true"] {
   margin-left: 5%;
 }
 
+.home_pages{
+  background-image: url('../images/abstract blue backgrounds/bluesky.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  max-height: 100%;
+  width: 100%;
+  z-index: -1;
+}
+
 .home-content-container {
   display: flex;
   justify-content: space-between;
