@@ -38,21 +38,33 @@ html {
 .dropdown-content {
   display: none;
   position: absolute;
-  background-color: grey;
+  background-color: #333;
+  border-width: 2px;
+  border-style: groove;
+  border-color: #1479EA;
+  
   min-width: 160px;
+  border-radius: 7px;
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   z-index: 1;
 }
 
 .dropdown-content a {
-  color: black;
+  color: antiquewhite;
   padding: 12px 16px;
   text-decoration: none;
+  border-radius: 5px;
   display: block;
 }
 
+.home-right-content-container{
+  margin: 5vw;
+}
+
 .dropdown-content a:hover {
-  background-color: #ddd;
+  background-color: transparent;
+  color: antiquewhite;
+  box-shadow: 0 0px 5px 3px #00ced2, 0 0px 8px 3px #00ced2 inset;
 }
 
 .dropdown:hover .dropdown-content {
@@ -723,7 +735,7 @@ a:link {
   display: flex;
 	justify-content: center;
   padding-top: 15vw;
-  padding-bottom: 15vw;
+  padding-bottom: 18vw;
 	margin-top: 2vw;
 	max-width: 72vw;
 	margin-left: 22%;
@@ -1370,11 +1382,13 @@ a:link {
   width: 250px;
   height: 250px;
   margin: 1em;
+  transition: ease-out 1s;
 }
 .images .card-shrink {
   width: 0em;
   height: 0em;
   margin: -1em;
+  transition: ease-in 1s;
 }
 
 .images .text-schwork-expand{
