@@ -888,6 +888,108 @@ div.chat-wrapper[opened="true"] {
     background-color: #22A699;
     transition-delay: 1.2s;
 }
+
+
+.aboutme_pages .aboutMe-workline-container{
+  padding: 2rem;
+  padding-bottom: 400px;
+  margin: 0 auto;
+  margin-left: 20vw;
+}
+
+.aboutme_pages .aboutMe-workline-container .top-section{
+  text-align: center;
+  padding: 4rem 0;
+  max-width: 50vw;
+  margin: 0 auto;
+}
+
+.aboutme_pages .aboutMe-workline-container .timeline{
+  position: relative;
+  min-height: 150px;
+}
+
+.aboutme_pages .aboutMe-workline-container .line{
+  position: absolute;
+  z-index: 2;
+  left: calc(50% - 1px);
+  width: 2px;
+  top: -50px;
+  bottom: -50px;
+  background-color: #000;
+  display: none;
+}
+
+.aboutme_pages .aboutMe-workline-container .line:before,
+.aboutme_pages .aboutMe-workline-container .line:after{
+  position: absolute;
+  display: block;
+  content: '';
+  height: 1rem;
+  width: 1rem;
+  border-radius: 50%;
+  background-color: #000;
+  left:50%;
+  transform: translateX(-50%);
+}
+
+.aboutme_pages .aboutMe-workline-container .line:after{
+  bottom:0;
+
+}
+
+.aboutme_pages .aboutMe-workline-container .section{
+  display: flex;
+  opacity: 0;
+  transform: translateX(-100%);
+  transition: 600ms ease-in;
+  position: relative;
+  z-index: 1;
+  padding: 1rem;
+  border-radius: 1rem;
+  align-items: center;
+  background-color: #ADD8E6;
+  border: 2px ridge rgba(5, 148, 148, 0.6);
+
+}
+
+.aboutme_pages .aboutMe-workline-container .section:nth-child(odd){
+  flex-direction: row-reverse;
+  transform: translateX(100%);
+}
+
+.aboutme_pages .aboutMe-workline-container .bead{
+  position: absolute;
+  display: block;
+  height: 1rem;
+  width: 1rem;
+  border-radius: 50%;
+  background-color: #000;
+  left: 50%;
+  top: 20%;
+  transform: translateX(-50%);
+}
+
+.aboutme_pages .aboutMe-workline-container .content{
+  width: calc(50% - 2rem);
+}
+
+.aboutme_pages .aboutMe-workline-container .show-me:nth-child(n){
+  transform: none;
+  opacity: 1;
+}
+
+
+.aboutme_pages .aboutMe-workline-container .workHeader,
+.aboutme_pages .aboutMe-workline-container .workTimer
+{
+  margin: 0;
+  font-size: 20px;
+}
+.aboutme_pages .aboutMe-workline-container .workTimer{
+  margin-bottom: 10px;
+  font-size: 18px;
+}
 /*--------------------------------------------works main page---------------------------------------------------------*/
 
 

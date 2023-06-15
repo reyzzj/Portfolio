@@ -23,7 +23,7 @@
 <body class="aboutme_pages">
   <!--bootstrap before </body>-->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
-  
+
 
 
   <!-- nav bar -->
@@ -443,39 +443,143 @@
     </div>
   </div>
 
+  <svg id="borderLine-aboutMe" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 869.84 27.55">
+    <defs>
+      <style>
+        .cls-1 {
+          fill: #fff;
+        }
+
+        .cls-2 {
+          stroke: #000;
+        }
+
+        .cls-2,
+        .cls-3 {
+          fill: none;
+        }
+
+        .cls-3 {
+          stroke: #707071;
+          stroke-width: 5px;
+        }
+      </style>
+    </defs>
+    <g id="Seperator">
+      <g id="Line_Circle_Triangle_of_Seperator" data-name="Line Circle Triangle of Seperator">
+        <line id="Line_of_Seperator" data-name="Line of Seperator" class="cls-3" x1="32.2" y1="13.66" x2="837.62"
+          y2="13.66" />
+        <g id="Circle_Right_of_Seperator" data-name="Circle Right of Seperator">
+          <circle cx="844.33" cy="13.78" r="6.71" />
+          <circle class="cls-2" cx="844.33" cy="13.78" r="6.44" />
+        </g>
+        <g id="Triangle_Right_of_Seperator" data-name="Triangle Right of Seperator">
+          <path d="m850.78,20.11V7.44l18.24,6.33-18.24,6.33Z" />
+          <path d="m868.2,13.78l-17.16-5.96v11.91l17.16-5.96m1.64,0l-19.33,6.71V7.06l19.33,6.71Z" />
+        </g>
+        <g id="Circle_Left_of_Seperator" data-name="Circle Left of Seperator">
+          <circle cx="25.48" cy="13.66" r="6.71" />
+          <circle class="cls-2" cx="25.48" cy="13.66" r="6.44" />
+        </g>
+        <g id="Triangle_Left_of_Seperator" data-name="Triangle Left of Seperator">
+          <path d="m19.06,7.32v12.67L.82,13.66l18.24-6.33Z" />
+          <path d="m1.64,13.66l17.16,5.96V7.7L1.64,13.66m-1.64,0l19.33-6.71v13.42L0,13.66Z" />
+        </g>
+      </g>
+      <g id="Central_Outer_Rectangle_of_Seperator" data-name="Central Outer Rectangle of Seperator">
+        <rect class="cls-1" x="389.28" y="1.16" width="91.28" height="25.24" rx="5.37" ry="5.37" />
+        <rect class="cls-3" x="390.62" y="2.5" width="88.6" height="22.55" rx="4.03" ry="4.03" />
+      </g>
+      <g id="Central_Inner_Rectangle_of_Seperator" data-name="Central Inner Rectangle of Seperator">
+        <rect x="412.37" y="7.6" width="45.64" height="12.89" rx="5.37" ry="5.37" />
+        <rect class="cls-3" x="413.71" y="8.94" width="42.96" height="10.2" rx="4.03" ry="4.03" />
+      </g>
+    </g>
+  </svg>
+
+    <div class="aboutMe-workline-container">
+        <div class="top-section">
+            <h1>Work Experience</h1>
+        </div>
+
+        <div class="timeline">
+            <div class="line"></div>
+            <div class="section">
+                <div class="bead"></div>
+                <div class="content">
+                    <h2 class="workHeader">Roadbull Logistics - Data Anayltics</h2>
+                    <h3 class="workTimer">2017 - 2020 (Across multiple school holidays)</h3>
+                    <li>Started off as a warehouse picker/packer but gradually in the office later to assist with daily
+                        operation and ad-hoc duties. Usually called back to assist the company for day to day operations
+                        and some enhance program to help the company grow.</li>
+
+
+                </div>
+            </div>
+
+            <div class="section">
+                <div class="bead"></div>
+                <div class="content">
+                    <h2 class="workHeader">SingPost - Warehouse Packer</h2>
+                    <h3 class="workTimer">2022 - 2022</h3>
+                    <li>Worked in a harsh warehouse environment to pick/pack/scan items. Assisted team IC to manage
+                        other part timer on assigning them duties and keep up team morale</li>
+
+                </div>
+            </div>
+
+            <div class="section">
+                <div class="bead"></div>
+                <div class="content">
+                    <h2 class="workHeader">Tele-Centre Services</h2>
+                    <h3 class="workTimer">2021 - 2021</h3>
+                    <li>Worked part time here during covid crisis to be part of a MOH project. Providing up to date informations
+                        and assistance to caller and escalating issues that the caller require.</li>
+
+                </div>
+            </div>
+
+
+
+
+
+        </div>
+    </div>
+    <script src="timeline.js"></script>
+
   <script src="aboutMe.js"></script>
 
   <script src="https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=1"></script>
   <script>
-    $(document).ready(function() {
-    
+    $(document).ready(function () {
 
-    window.addEventListener('dfMessengerLoaded', function (event) {
+
+      window.addEventListener('dfMessengerLoaded', function (event) {
         $r1 = document.querySelector("df-messenger");
         $r2 = $r1.shadowRoot.querySelector("df-messenger-chat");
         $r3 = $r2.shadowRoot.querySelector("df-messenger-user-input");
 
         var sheet = new CSSStyleSheet;
-        sheet.replaceSync( `div.chat-wrapper[opened="true"] { height: 470px }`);
-        $r2.shadowRoot.adoptedStyleSheets = [ sheet ];
+        sheet.replaceSync(`div.chat-wrapper { bottom: 85px }`);
+        sheet.replaceSync(`div.chat-wrapper[opened="true"] { height: 400px }`);
+        
+        $r2.shadowRoot.adoptedStyleSheets = [sheet];
 
+      });
     });
-});
   </script>
- 
+
   <style>
     df-messenger {
       --df-messenger-bot-message: #b5b8c0;
       --df-messenger-user-message: #7bcdee;
     }
   </style>
-  
-  <df-messenger
-    intent="WELCOME"
-    chat-title="Assist Bot"
-    agent-id="ab13258a-859e-4314-8893-7556b421f9e3"
-    language-code="en"
-  ></df-messenger>
+
+  <df-messenger intent="WELCOME" chat-title="Bot Assist" agent-id="ab13258a-859e-4314-8893-7556b421f9e3"
+    language-code="en">
+  </df-messenger>
+
 </body>
 
 </html>
