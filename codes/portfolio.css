@@ -80,6 +80,10 @@ a:link {
   color: black;
 }
 
+div.chat-wrapper[opened="true"] {
+  height:200px;
+}
+
 #navbar-main-logo {
   /* max-width: 18%; */
   width: 75px;
