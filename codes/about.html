@@ -446,6 +446,22 @@
   <script src="aboutMe.js"></script>
 
   <script src="https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=1"></script>
+  <script>
+    $(document).ready(function() {
+    
+
+    window.addEventListener('dfMessengerLoaded', function (event) {
+        $r1 = document.querySelector("df-messenger");
+        $r2 = $r1.shadowRoot.querySelector("df-messenger-chat");
+        $r3 = $r2.shadowRoot.querySelector("df-messenger-user-input");
+
+        var sheet = new CSSStyleSheet;
+        sheet.replaceSync( `div.chat-wrapper[opened="true"] { height: 470px }`);
+        $r2.shadowRoot.adoptedStyleSheets = [ sheet ];
+
+    });
+});
+  </script>
  
   <style>
     df-messenger {
