@@ -507,7 +507,36 @@
 
     <div id="white-segreator"></div>
 
-
+    <script src="https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=1"></script>
+    <script>
+      $(document).ready(function () {
+  
+  
+        window.addEventListener('dfMessengerLoaded', function (event) {
+          $r1 = document.querySelector("df-messenger");
+          $r2 = $r1.shadowRoot.querySelector("df-messenger-chat");
+          $r3 = $r2.shadowRoot.querySelector("df-messenger-user-input");
+  
+          var sheet = new CSSStyleSheet;
+          sheet.replaceSync(`div.chat-wrapper { bottom: 85px }`);
+          sheet.replaceSync(`div.chat-wrapper[opened="true"] { height: 400px }`);
+          
+          $r2.shadowRoot.adoptedStyleSheets = [sheet];
+  
+        });
+      });
+    </script>
+  
+    <style>
+      df-messenger {
+        --df-messenger-bot-message: #b5b8c0;
+        --df-messenger-user-message: #7bcdee;
+      }
+    </style>
+  
+    <df-messenger intent="WELCOME" chat-title="Bot Assist" agent-id="ab13258a-859e-4314-8893-7556b421f9e3"
+      language-code="en">
+    </df-messenger>
 
 </body>
 

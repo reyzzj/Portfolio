@@ -344,7 +344,7 @@ div.chat-wrapper[opened="true"] {
   /*style the bar*/
   background-color: #353b48;
   display: block;
-  height: 5px;
+  height: 6px;
   width: 20vw;
   border: 1px solid rgba(0, 0, 0, 0.3);
   border-radius: 3px;
@@ -359,7 +359,7 @@ div.chat-wrapper[opened="true"] {
 
 .bar span {
   /*style the span tag*/
-  height: 2px;
+  height: 4px;
   float: left;
   background-color: #2187e7;
 }
@@ -384,7 +384,7 @@ div.chat-wrapper[opened="true"] {
 
 .jquery {
   /*set skills and animation of jquery*/
-  width: 30%;
+  width: 50%;
   animation: jquery 2s;
 }
 
@@ -396,25 +396,25 @@ div.chat-wrapper[opened="true"] {
 
 .sql {
   /*set skills and animation of sql*/
-  width: 60%;
+  width: 50%;
   animation: sql 2s;
 }
 
 .java {
   /*set skills and animation of java*/
-  width: 60%;
+  width: 70%;
   animation: java 2s;
 }
 
 .python {
   /*set skills and animation of python*/
-  width: 60%;
+  width: 80%;
   animation: python 2s;
 }
 
 .cPlusPlus {
   /*set skills and animation of c++*/
-  width: 60%;
+  width: 40%;
   animation: cPlusPlus 2s;
 }
 
@@ -434,68 +434,68 @@ div.chat-wrapper[opened="true"] {
 
 .illustrator {
   /*set skills and animation of xd*/
-  width: 90%;
-  animation: xd 2s;
+  width: 60%;
+  animation: illustrator 2s;
 }
 
 .photoshop {
   /*set skills and animation of xd*/
-  width: 90%;
-  animation: xd 2s;
+  width: 50%;
+  animation: photoshop 2s;
 }
 
 .animate {
   /*set skills and animation of xd*/
-  width: 90%;
-  animation: xd 2s;
+  width: 20%;
+  animation: animate 2s;
 }
 
 .premier {
   /*set skills and animation of xd*/
-  width: 90%;
-  animation: xd 2s;
+  width: 30%;
+  animation: premier 2s;
 }
 
 .excel {
   /*set skills and animation of xd*/
   width: 90%;
-  animation: xd 2s;
+  animation: excel 2s;
 }
 
 .powerpoint {
   /*set skills and animation of xd*/
-  width: 90%;
-  animation: xd 2s;
+  width: 75%;
+  animation: powerpoint 2s;
 }
 
 .word {
   /*set skills and animation of xd*/
   width: 90%;
-  animation: xd 2s;
+  animation: word 2s;
 }
 
 .tableau {
   /*set skills and animation of xd*/
-  width: 90%;
-  animation: xd 2s;
+  width: 60%;
+  animation: tableau 2s;
 }
 
 .uipath {
   /*set skills and animation of xd*/
-  width: 90%;
-  animation: xd 2s;
+  width: 40%;
+  animation: uipath 2s;
 }
 
 .inventor {
   /*set skills and animation of xd*/
-  width: 90%;
-  animation: xd 2s;
+  width: 80%;
+  animation: inventor 2s;
 }
 
 .davinci {
   /*set skills and animation of xd*/
-  width: 90%;
-  animation: xd 2s;
+  width: 40%;
+  animation: davinci 2s;
 }
 
 @keyframes html {
@@ -516,7 +516,7 @@ div.chat-wrapper[opened="true"] {
   }
 
   100% {
-    width: 93%;
+    width: 90%;
   }
 }
 
@@ -538,7 +538,7 @@ div.chat-wrapper[opened="true"] {
   }
 
   100% {
-    width: 30%;
+    width: 50%;
   }
 }
 @keyframes php {
@@ -558,7 +558,7 @@ div.chat-wrapper[opened="true"] {
   }
 
   100% {
-    width: 60%;
+    width: 50%;
   }
 }
 @keyframes java {
@@ -568,7 +568,7 @@ div.chat-wrapper[opened="true"] {
   }
 
   100% {
-    width: 60%;
+    width: 70%;
   }
 }
 @keyframes python {
@@ -578,7 +578,7 @@ div.chat-wrapper[opened="true"] {
   }
 
   100% {
-    width: 60%;
+    width: 80%;
   }
 }
 @keyframes cPlusPlus {
@@ -588,7 +588,7 @@ div.chat-wrapper[opened="true"] {
   }
 
   100% {
-    width: 60%;
+    width: 40%;
   }
 }
 @keyframes cSharp {
@@ -621,7 +621,7 @@ div.chat-wrapper[opened="true"] {
   }
 
   100% {
-    width: 90%;
+    width: 60%;
   }
 }
 
@@ -632,7 +632,7 @@ div.chat-wrapper[opened="true"] {
   }
 
   100% {
-    width: 90%;
+    width: 50%;
   }
 }
 
@@ -643,7 +643,7 @@ div.chat-wrapper[opened="true"] {
   }
 
   100% {
-    width: 90%;
+    width: 20%;
   }
 }
 
@@ -654,7 +654,7 @@ div.chat-wrapper[opened="true"] {
   }
 
   100% {
-    width: 90%;
+    width: 30%;
   }
 }
 
@@ -676,7 +676,7 @@ div.chat-wrapper[opened="true"] {
   }
 
   100% {
-    width: 90%;
+    width: 75%;
   }
 }
 
@@ -698,7 +698,7 @@ div.chat-wrapper[opened="true"] {
   }
 
   100% {
-    width: 90%;
+    width: 60%;
   }
 }
 
@@ -709,7 +709,7 @@ div.chat-wrapper[opened="true"] {
   }
 
   100% {
-    width: 90%;
+    width: 40%;
   }
 }
 
@@ -720,7 +720,7 @@ div.chat-wrapper[opened="true"] {
   }
 
   100% {
-    width: 90%;
+    width: 80%;
   }
 }
 
@@ -731,7 +731,7 @@ div.chat-wrapper[opened="true"] {
   }
 
   100% {
-    width: 90%;
+    width: 40%;
   }
 }
 
@@ -948,9 +948,6 @@ div.chat-wrapper[opened="true"] {
   padding: 1rem;
   border-radius: 1rem;
   align-items: center;
-  background-color: #ADD8E6;
-  border: 2px ridge rgba(5, 148, 148, 0.6);
-
 }
 
 .aboutme_pages .aboutMe-workline-container .section:nth-child(odd){
